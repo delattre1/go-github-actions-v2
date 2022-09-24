@@ -64,11 +64,17 @@ $ gh secret set DOCKER_ACCESS_TOKEN
 - Run project
 
   lorem
+
 - Run tests
+
 lorem
+
 - Apply linter 
+
 lorem
+
 - Upload docker image to DockerHub
+
 lorem
 
 
