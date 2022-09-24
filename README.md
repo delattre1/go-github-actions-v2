@@ -23,7 +23,7 @@
 # Requirements:
 ## Install `act` to run your [GitHub Actions](https://developer.github.com/actions/) locally. [Act Link](https://github.com/nektos/act)
 
-## Necessary prerequisites for running `act`
+## Install Docker
 
 `act` depends on `docker` to run workflows.
 
@@ -36,10 +36,12 @@ If you are using Linux, you will need to [install Docker Engine](https://docs.do
 ## Install GitHub CLI 
 For [installation options](https://github.com/cli/cli/blob/trunk/README.md#installation), [for usage instructions](https://cli.github.com/manual/)
 
-
 ## Install LINTER - TODO
 
 - TODO
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONFIGS -->
 # Configs:
@@ -51,6 +53,8 @@ $ gh secret set DOCKER_USERNAME
 $ gh secret set DOCKER_ACCESS_TOKEN
 ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- PIPELINE DESCRIPTION -->
 # Pipeline Description
 
@@ -59,6 +63,10 @@ $ gh secret set DOCKER_ACCESS_TOKEN
 ## Apply linter 
 ## Automatically upload docker image to DockerHub
 
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- RUNNING LOCALLY -->
 # Running [GitHub Actions](https://developer.github.com/actions/) locally!
@@ -78,6 +86,10 @@ $ gh pr merge 1 --admin
 
 ## GIF PLACEHOLDER RUNNING
 
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- VERIFICATION -->
 # Verification
