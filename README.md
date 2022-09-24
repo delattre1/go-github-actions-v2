@@ -62,6 +62,7 @@ $ gh secret set DOCKER_ACCESS_TOKEN
 # Pipeline Description
 
 - Run project
+
   lorem
 - Run tests
 lorem
