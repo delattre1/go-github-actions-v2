@@ -21,7 +21,8 @@
 
 <!-- REQUIREMENTS -->
 # Requirements:
-## Install `act` to run your [GitHub Actions](https://developer.github.com/actions/) locally. [Act Link](https://github.com/nektos/act)
+## Install `act` to run your [GitHub Actions](https://developer.github.com/actions/) locally. 
+[Act Link](https://github.com/nektos/act)
 
 ## Install Docker
 
@@ -34,7 +35,8 @@ If you are using Windows, please follow steps for [installing Docker Desktop on 
 If you are using Linux, you will need to [install Docker Engine](https://docs.docker.com/engine/install/).
 
 ## Install GitHub CLI 
-For [installation options](https://github.com/cli/cli/blob/trunk/README.md#installation), [for usage instructions](https://cli.github.com/manual/)
+- [Installation options](https://github.com/cli/cli/blob/trunk/README.md#installation)
+- [For usage instructions](https://cli.github.com/manual/)
 
 ## Install LINTER - TODO
 
