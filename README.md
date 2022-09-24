@@ -4,32 +4,17 @@
 <!-- TABLE OF CONTENTS -->
 <details>
 <summary>Table of Contents</summary>
-<ol>
-<li>
-<a href="#about-the-project">References</a>
-<ul>
-<li><a href="#built-with">Built With</a></li>
-</ul>
-</li>
-
-<li>
-<a href="#getting-started">Getting Started</a>
-<ul>
-<li><a href="#prerequisites">Prerequisites</a></li>
-<li><a href="#installation">Installation</a></li>
-</ul>
-</li>
-
-<li><a href="#usage">Usage</a></li>
-<li><a href="#roadmap">Roadmap</a></li>
-<li><a href="#contributing">Contributing</a></li>
-<li><a href="#license">License</a></li>
-<li><a href="#contact">Contact</a></li>
-<li><a href="#acknowledgments">Acknowledgments</a></li>
-</ol>
+  <ol>
+    <li><a href="#references">References</a></li>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#configs">Configs</a></li>
+    <li><a href="#pipeline">Pipeline</a></li>
+    <li><a href="#running-locally">Running Locally</a></li>
+    <li><a href="#verification">Verification</a></li>
+  </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
+<!-- REFERENCES -->
 # References:
 > GitHub Actions for Go Developers! - https://www.youtube.com/watch?v=KVrL_UHJ7kQ
 
@@ -38,6 +23,7 @@
 > Install github cli - https://github.com/cli/cli
 
 
+<!-- REQUIREMENTS -->
 # Requirements:
 ## Install `act` to run your [GitHub Actions](https://developer.github.com/actions/) locally
 `act` link https://github.com/nektos/act
@@ -62,6 +48,7 @@ For [installation options click here](https://github.com/cli/cli/blob/trunk/READ
 
 - TODO
 
+<!-- CONFIGS -->
 # Configs:
 
 ## Setting up github secrets via github-cli
@@ -71,6 +58,7 @@ $ gh secret set DOCKER_USERNAME
 $ gh secret set DOCKER_ACCESS_TOKEN
 ```
 
+<!-- PIPELINE DESCRIPTION -->
 # Pipeline Description
 
 ## Run project
@@ -79,14 +67,8 @@ $ gh secret set DOCKER_ACCESS_TOKEN
 ## Automatically upload docker image to DockerHub
 
 
+<!-- RUNNING LOCALLY -->
 # Running [GitHub Actions](https://developer.github.com/actions/) locally!
-
-## Display workflows:
-``` bash
-$ gh workflow list
-> golang-pipeline  active  35710284
-$ gh workflow view golang-pipeline
-```
 
 ## To create a PR from current branch to master via cli:
 ``` bash
@@ -101,6 +83,14 @@ $ gh pr merge 1 --admin
 
 ## GIF PLACEHOLDER RUNNING
 
-## Verify via CLI that tests also passed on [GitHub Actions](https://developer.github.com/actions/)
 
+<!-- VERIFICATION -->
+# Verification
+## Use CLI to check if tests also passes on [GitHub Actions](https://developer.github.com/actions/)
+> Only doing that because I don't have access to repo webpage
+``` bash
+$ gh workflow list
+> golang-pipeline  active  35710284
+$ gh workflow view golang-pipeline
+```
 
