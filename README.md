@@ -1,3 +1,4 @@
+<a name="readme-top"></a>
 <!-- TABLE OF CONTENTS -->
 <details>
 <summary>Table of Contents</summary>
@@ -36,7 +37,7 @@ If you are using Linux, you will need to [install Docker Engine](https://docs.do
 
 ## Install GitHub CLI 
 - [Installation options](https://github.com/cli/cli/blob/trunk/README.md#installation)
-- [For usage instructions](https://cli.github.com/manual/)
+- [Usage instructions](https://cli.github.com/manual/)
 
 ## Install LINTER - TODO
 
@@ -60,10 +61,14 @@ $ gh secret set DOCKER_ACCESS_TOKEN
 <!-- PIPELINE DESCRIPTION -->
 # Pipeline Description
 
-## Run project
-## Run tests
-## Apply linter 
-## Automatically upload docker image to DockerHub
+- Run project
+lorem
+- Run tests
+lorem
+- Apply linter 
+lorem
+- Upload docker image to DockerHub
+lorem
 
 
 
