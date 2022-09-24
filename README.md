@@ -34,8 +34,6 @@ If you are using Windows, please follow steps for [installing Docker Desktop on 
 If you are using Linux, you will need to [install Docker Engine](https://docs.docker.com/engine/install/).
 
 ## Install GitHub CLI 
-This step is only required because I did not have access to the repo webpage
-
 For [installation options](https://github.com/cli/cli/blob/trunk/README.md#installation), [for usage instructions](https://cli.github.com/manual/)
 
 
@@ -70,7 +68,7 @@ $ gh secret set DOCKER_ACCESS_TOKEN
 # Reference: https://cli.github.com/manual/gh_pr_create
 $ gh pr create --title "title" --body "msg" --base master --head branch-to-merge
   > ? Body <Received>
-  > ? What's next? Submit
+  > ? What\'s next? Submit
   > https://github.com/delattre1/go-github-actions-v2/pull/1 
 $ gh pr merge 1 --admin
   > ✓ Merged pull request #1
