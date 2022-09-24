@@ -66,10 +66,12 @@ $ gh secret set DOCKER_ACCESS_TOKEN
 ## To create a PR from current branch to master via cli:
 ``` bash
 # Reference: https://cli.github.com/manual/gh_pr_create
+# First create a pull request
 $ gh pr create --title "title" --body "msg" --base master --head branch-to-merge
   > ? Body <Received>
-  > ? What\'s next? Submit
+  > ? What is next? Submit
   > https://github.com/delattre1/go-github-actions-v2/pull/1 
+# Merge the PR
 $ gh pr merge 1 --admin
   > ✓ Merged pull request #1
 ```
