@@ -9,6 +9,7 @@
     <li><a href="#pipeline-description">Pipeline Description</a></li>
     <li><a href="#running-github-actions-locally">Running Locally</a></li>
     <li><a href="#verification">Verification</a></li>
+    <li><a href="#sample-result">Sample Result</a></li>
   </ol>
 </details>
 
@@ -60,18 +61,20 @@ $ gh secret set DOCKER_ACCESS_TOKEN
 <!-- PIPELINE DESCRIPTION -->
 # Pipeline Description
 
-- Run project
-
-  lorem
-- Run tests
-
-  lorem
 - Apply linter 
 
-  lorem
+  Linter is a tool that analyzes source code to flag programming errors, bugs, stylistic errors, and suspicious constructs.
+  golangci-lint
+  Code parsing and loading only one time + linting + linting + … + linting→time
+  It parse codes only once then it performs analysis with all linters within less time. Golangci-lint directly calls linters (no forking) and reuses 80% of work by parsing program only once. This makes golangci-lint super faster.
+
+- Run tests
+
+  The go test command executes test functions (whose names begin with Test ) in test files (whose names end with _test.go). You can add the -v flag to get verbose output that lists all of the tests and their results. The tests should pass.
+
 - Upload docker image to DockerHub
 
-  The deploy job requires the test job to run first so that if the tests fail, the Docker image will not be built. If the test job does pass, the remaining steps will run. The first step extracts the version number from a git tag that has the following format vX.X.X.
+  The deploy job requires the `test` and `linter` jobs to run first so that if the tests fail, the Docker image will not be built. If the test job does pass, the remaining steps will run. The first step extracts the version number from a git tag that has the following format vX.X.X.
 
   The next two steps setup the environment so that Docker images can be built. Finally, a step is run that signs into your Docker Hub account using the credentials stored in GitHub Secrets, then the Docker image is built and pushed to Docker Hub.
 
@@ -80,22 +83,13 @@ $ gh secret set DOCKER_ACCESS_TOKEN
 <!-- RUNNING LOCALLY -->
 # Running [GitHub Actions](https://developer.github.com/actions/) locally!
 
-## To create a PR from current branch to master via cli:
+You can run the command:
 ``` bash
-# Reference: https://cli.github.com/manual/gh_pr_create
-# First create a pull request
-$ gh pr create --title "title" --body "msg" --base master --head branch-to-merge
-  > ? Body <Received>
-  > ? What is next? Submit
-  > https://github.com/delattre1/go-github-actions-v2/pull/1 
-# Merge the PR
-$ gh pr merge 1 --admin
-  > ✓ Merged pull request #1
+$ act 
 ```
+- Sample of my [personal repository](https://github.com/delattre1/go-github-actions-v2) running act locally 
 
-## GIF PLACEHOLDER RUNNING
-
-
+![act-sample]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -109,4 +103,50 @@ $ gh workflow list
   > golang-pipeline  active  35710284
 $ gh workflow view golang-pipeline
 ```
+
+
+> After verifying that the tests runned with success, you can merge the code into the master:
+## To create a PR from current branch to master via cli:
+``` bash
+# Reference: https://cli.github.com/manual/gh_pr_create
+# First create a pull request
+$ gh pr create --title "title" --body "msg" --base master --head branch-to-merge
+  > ? Body <Received>
+  > ? What is next? Submit
+  > https://github.com/delattre1/go-github-actions-v2/pull/1 
+# Merge the PR
+$ gh pr merge 1 --admin
+  > ✓ Merged pull request #1
+```
+
+
+# Sample result
+> This was done in my [personal repository](https://github.com/delattre1/go-github-actions-v2) so I could have access to the repo webpage
+
+- After a PR we can verify that the github actions runned with success
+![sh1-status]
+
+- Here we can check that the matrix with different Go versions and different OS runned without errors
+![sh2-summary-matrix]
+
+- Only opening one job to see a sample result for the test
+![sh3-sample-results]
+
+- Now we are pushing a new tag, the expected result would be a new version on our DockerHub
+![sh4-after-pushing-tag]
+
+- Here we can confirm that the image was built and uploaded with success!
+![sh5-dockerhub-sample]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[sh1-status]:             img/1-status-workflow-github.png
+[sh2-summary-matrix]:     img/2-summary-matrix-workflow.png
+[sh3-sample-results]:     img/3-sample-result.png
+[sh4-after-pushing-tag]:  img/4-after-pushing-tag.png
+[sh5-dockerhub-sample]:   img/5-dockerhub.png
+[act-sample]:             img/act-run.gif
+
+
 
