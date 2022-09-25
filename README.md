@@ -128,7 +128,7 @@ $ gh workflow view golang-pipeline
 - Now we are pushing a new tag, the expected result would be a new version on our DockerHub
 ![sh4-after-pushing-tag]
 
-- Here we can confirm that the image was build and uploaded with success!
+- Here we can confirm that the image was built and uploaded with success!
 ![sh5-dockerhub-sample]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
