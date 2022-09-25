@@ -113,7 +113,9 @@ $ gh workflow view golang-pipeline
 # Example of result with access to github webpage
 ## This was done in my [personal repository](https://github.com/delattre1/go-github-actions-v2)
 
+After a PR we can verify that the github actions runned with success
 ![sh1-status]
+Here we can check that the matrix with different Go versions and different OS runned without errors
 ![sh2-summary-matrix]
 ![sh3-sample-results]
 ![sh4-after-pushing-tag]
