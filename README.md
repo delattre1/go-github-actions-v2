@@ -97,7 +97,7 @@ $ gh pr merge 1 --admin
 ```
 
 
-- Sample of act running locally on my [personal repository](https://github.com/delattre1/go-github-actions-v2)
+- Sample of my [personal repository](https://github.com/delattre1/go-github-actions-v2) running act locally 
 
 ![act-sample]
 
