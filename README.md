@@ -83,6 +83,29 @@ $ gh secret set DOCKER_ACCESS_TOKEN
 <!-- RUNNING LOCALLY -->
 # Running [GitHub Actions](https://developer.github.com/actions/) locally!
 
+You can run the command:
+``` bash
+$ act 
+```
+- Sample of my [personal repository](https://github.com/delattre1/go-github-actions-v2) running act locally 
+
+![act-sample]
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- VERIFICATION -->
+# Verification
+## Use CLI to check if tests also passes on [GitHub Actions](https://developer.github.com/actions/)
+> Only doing that via CLI because I don't have access to repo webpage
+``` bash
+$ gh workflow list
+  > golang-pipeline  active  35710284
+$ gh workflow view golang-pipeline
+```
+
+
+> After verifying that the tests runned with success, you can merge the code into the master:
 ## To create a PR from current branch to master via cli:
 ``` bash
 # Reference: https://cli.github.com/manual/gh_pr_create
@@ -96,22 +119,6 @@ $ gh pr merge 1 --admin
   > ✓ Merged pull request #1
 ```
 
-
-- Sample of my [personal repository](https://github.com/delattre1/go-github-actions-v2) running act locally 
-
-![act-sample]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- VERIFICATION -->
-# Verification
-## Use CLI to check if tests also passes on [GitHub Actions](https://developer.github.com/actions/)
-> Only doing that via CLI because I don't have access to repo webpage
-``` bash
-$ gh workflow list
-  > golang-pipeline  active  35710284
-$ gh workflow view golang-pipeline
-```
 
 # Sample result
 > This was done in my [personal repository](https://github.com/delattre1/go-github-actions-v2) so I could have access to the repo webpage
