@@ -115,11 +115,15 @@ $ gh workflow view golang-pipeline
 
 - After a PR we can verify that the github actions runned with success
 ![sh1-status]
+
 - Here we can check that the matrix with different Go versions and different OS runned without errors
 ![sh2-summary-matrix]
+
 - Only opening one job to see a sample result for the test
+
 ![sh3-sample-results]
 - Now we are pushing a new tag, the expected result would be a new version on our DockerHub
+
 ![sh4-after-pushing-tag]
 - Here we can confirm that the image was build and uploaded with success!
 ![sh5-dockerhub-sample]
