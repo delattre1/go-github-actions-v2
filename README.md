@@ -9,6 +9,7 @@
     <li><a href="#pipeline-description">Pipeline Description</a></li>
     <li><a href="#running-github-actions-locally">Running Locally</a></li>
     <li><a href="#verification">Verification</a></li>
+    <li><a href="#sample-result">Sample Result</a></li>
   </ol>
 </details>
 
@@ -112,8 +113,8 @@ $ gh workflow list
 $ gh workflow view golang-pipeline
 ```
 
-# Example of result with access to github webpage
-> This was done in my [personal repository](https://github.com/delattre1/go-github-actions-v2)
+# Sample result
+> This was done in my [personal repository](https://github.com/delattre1/go-github-actions-v2) so I could have access to the repo webpage
 
 - After a PR we can verify that the github actions runned with success
 ![sh1-status]
