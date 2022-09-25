@@ -6,7 +6,7 @@
     <li><a href="#references">References</a></li>
     <li><a href="#requirements">Requirements</a></li>
     <li><a href="#configs">Configs</a></li>
-    <li><a href="#pipeline">Pipeline</a></li>
+    <li><a href="#pipeline-description">Pipeline Description</a></li>
     <li><a href="#running-github-actions-locally">Running Locally</a></li>
     <li><a href="#verification">Verification</a></li>
   </ol>
@@ -39,10 +39,9 @@ If you are using Linux, you will need to [install Docker Engine](https://docs.do
 - [Installation options](https://github.com/cli/cli/blob/trunk/README.md#installation)
 - [Usage instructions](https://cli.github.com/manual/)
 
-## Install LINTER - TODO
-
-- TODO
-
+## Install [golangci-lint](https://github.com/golangci/golangci-lint)
+- [Locally](https://golangci-lint.run/usage/install/#local-installation)
+- [CI Environment](https://golangci-lint.run/usage/install/#ci-installation)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
