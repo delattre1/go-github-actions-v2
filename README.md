@@ -133,12 +133,12 @@ $ gh workflow view golang-pipeline
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[sh1-status]            : img/1-status-workflow-github.png
-[sh2-summary-matrix]    : img/2-summary-matrix-workflow.png
-[sh3-sample-results]    : img/3-sample-result.png
-[sh4-after-pushing-tag] : img/4-after-pushing-tag.png
-[sh5-dockerhub-sample]  : img/5-dockerhub.png
-[act-sample]            : img/act-run.gif
+[sh1-status]:             img/1-status-workflow-github.png
+[sh2-summary-matrix]:     img/2-summary-matrix-workflow.png
+[sh3-sample-results]:     img/3-sample-result.png
+[sh4-after-pushing-tag]:  img/4-after-pushing-tag.png
+[sh5-dockerhub-sample]:   img/5-dockerhub.png
+[act-sample]:             img/act-run.gif
 
 
 
