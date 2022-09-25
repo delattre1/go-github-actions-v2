@@ -112,9 +112,9 @@ $ gh workflow view golang-pipeline
 
 # Example of result with access to github webpage (personal repo)
 
-[![sh1-status][sh1-status]]
-[![sh2-summary-matrix][sh2-summary-matrix]]
-[![sh3-sample-results][sh3-sample-results]]
+![sh1-status]
+![sh2-summary-matrix]
+![sh3-sample-results]
 [![sh4-after-pushing-tag][sh4-after-pushing-tag]]
 [![sh5-dockerhub-sample][sh5-dockerhub-sample]]
 
