@@ -72,10 +72,9 @@ $ gh secret set DOCKER_ACCESS_TOKEN
   lorem
 - Upload docker image to DockerHub
 
-  lorem
+  The deploy job requires the test job to run first so that if the tests fail, the Docker image will not be built. If the test job does pass, the remaining steps will run. The first step extracts the version number from a git tag that has the following format vX.X.X.
 
-
-
+  The next two steps setup the environment so that Docker images can be built. Finally, a step is run that signs into your Docker Hub account using the credentials stored in GitHub Secrets, then the Docker image is built and pushed to Docker Hub.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
