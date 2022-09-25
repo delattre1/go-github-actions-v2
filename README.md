@@ -97,7 +97,8 @@ $ gh pr merge 1 --admin
 ```
 
 
-> Sample of act running locally on my [personal repository](https://github.com/delattre1/go-github-actions-v2)
+- Sample of act running locally on my [personal repository](https://github.com/delattre1/go-github-actions-v2)
+
 ![act-sample]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
