@@ -60,18 +60,18 @@ $ gh secret set DOCKER_ACCESS_TOKEN
 <!-- PIPELINE DESCRIPTION -->
 # Pipeline Description
 
-- Apply linter 
+- 1) Apply linter 
 
   Linter is a tool that analyzes source code to flag programming errors, bugs, stylistic errors, and suspicious constructs.
   golangci-lint
   Code parsing and loading only one time + linting + linting + … + linting→time
   It parse codes only once then it performs analysis with all linters within less time. Golangci-lint directly calls linters (no forking) and reuses 80% of work by parsing program only once. This makes golangci-lint super faster.
 
-- Run tests
+- 2) Run tests
 
   The go test command executes test functions (whose names begin with Test ) in test files (whose names end with _test.go). You can add the -v flag to get verbose output that lists all of the tests and their results. The tests should pass.
 
-- Upload docker image to DockerHub
+- 3) Upload docker image to DockerHub
 
   The deploy job requires the `test` and `linter` jobs to run first so that if the tests fail, the Docker image will not be built. If the test job does pass, the remaining steps will run. The first step extracts the version number from a git tag that has the following format vX.X.X.
 
