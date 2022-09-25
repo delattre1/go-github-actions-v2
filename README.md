@@ -110,3 +110,17 @@ $ gh workflow list
 $ gh workflow view golang-pipeline
 ```
 
+# Example of result with access to github webpage (personal repo)
+
+[![sh1-status][sh1-status]]
+[![sh2-summary-matrix][sh2-summary-matrix]]
+[![sh3-sample-results][sh3-sample-results]]
+[![sh4-after-pushing-tag][sh4-after-pushing-tag]]
+[![sh5-dockerhub-sample][sh5-dockerhub-sample]]
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[sh1-status]:           img/1-status-workflow-github.png
+[sh2-summary-matrix]:   img/2-summary-matrix-workflow.png
+[sh3-sample-results]:   img/3-sample-result.png
+[sh4-after-pushing-tag]:img/4-after-pushing-tag.png
+[sh5-dockerhub-sample]: img/5-dockerhub.png
